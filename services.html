@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camille</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="services.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-gem"></i> Camille</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="fa fa-bars text-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="Camille.html"><i class="fa-solid fa-house icon"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa-solid fa-briefcase icon"></i> Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gallery.html"><i class="fa-solid fa-images icon"></i> Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-user icon"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Blog.html"><i class="fa-solid fa-blog icon"></i> Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contect.html"><i class="fa-solid fa-envelope icon"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="camilleCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/915160/pexels-photo-915160.jpeg');">
+        <div class="carousel-caption">
+          <h1>Welcome to Camille</h1>
+          <p>Where creativity meets modern elegance</p>
+          <a href="#" class="btn btn-discover mt-3">Discover Now</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/1502645/pexels-photo-1502645.jpeg');">
+        <div class="carousel-caption">
+          <h1>Stylish & Modern</h1>
+          <p>We create designs that inspire</p>
+          <a href="#" class="btn btn-discover mt-3">Discover Now</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/3609620/pexels-photo-3609620.jpeg');">
+        <div class="carousel-caption">
+          <h1>Your Brand, Our Passion</h1>
+          <p>Let’s build something beautiful together</p>
+          <a href="#" class="btn btn-discover mt-3">Discover Now</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#camilleCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#camilleCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Navbar Scroll Effect -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+
+<!-- AOS (Animate On Scroll) Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<section id="services" class="services-section py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="color:#ff1493;" data-aos="fade-down" data-aos-duration="1000">
+      Our Services
+    </h2>
+    <p class="text-muted mb-5" data-aos="fade-up" data-aos-duration="1000">
+      We provide world-class beauty and styling services designed to make you shine.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Makeup -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="service-box p-4 rounded-4 shadow-lg bg-white">
+          <div class="icon-circle mb-3">
+            <i class="fa-solid fa-paintbrush fa-3x"></i>
+          </div>
+          <h5 class="fw-bold" style="color:#ff1493;">Makeup</h5>
+          <p class="text-muted small mb-3">203 Fake St. Mountain View,California, USA, San Francisco, California, USA</p>
+        </div>
+      </div>
+
+      <!-- Hair Styling -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="service-box p-4 rounded-4 shadow-lg bg-white">
+          <div class="icon-circle mb-3">
+            <i class="fa-solid fa-scissors fa-3x"></i>
+          </div>
+          <h5 class="fw-bold" style="color:#ff1493;">Hair Styling</h5>
+          <p class="text-muted small mb-3">A small river named Duden flows by their place and supplies.</p>
+        </div>
+      </div>
+
+      <!-- Nails -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1400">
+        <div class="service-box p-4 rounded-4 shadow-lg bg-white">
+          <div class="icon-circle mb-3">
+            <i class="fa-solid fa-hand-sparkles fa-3x"></i>
+          </div>
+          <h5 class="fw-bold" style="color:#ff1493;">Nails</h5>
+          <p class="text-muted small mb-3">A small river named Duden flows by their place and supplies.</p>
+        </div>
+      </div>
+
+      <!-- Body Treatment -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1600">
+        <div class="service-box p-4 rounded-4 shadow-lg bg-white">
+          <div class="icon-circle mb-3">
+            <i class="fa-solid fa-spa fa-3x"></i>
+          </div>
+          <h5 class="fw-bold" style="color:#ff1493;">Body Treatment</h5>
+          <p class="text-muted small mb-3">A small river named Duden flows by their place and supplies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- AOS (Animate On Scroll) Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<!-- EXPLORE SERVICES SECTION -->
+<section id="explore-services" class="py-5" style="background-color:#fff;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3" style="color:#ff1493;" data-aos="fade-down" data-aos-duration="1000">
+      Explore Our Services
+    </h2>
+    <p class="text-muted mb-5" data-aos="fade-up" data-aos-duration="1000">
+      The beauty is not luxurious imagination.<br>
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Service 01 -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="explore-card rounded-4 shadow-lg overflow-hidden position-relative">
+          <img src="https://images.pexels.com/photos/5128275/pexels-photo-5128275.jpeg" 
+               class="img-fluid w-100 service-img" alt="Manicure & Pedicure">
+          <div class="explore-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+               style="background: rgba(255,255,255,0.15); backdrop-filter: blur(3px);">
+            <h5 class="text-white fw-bold">01. Manicure & Pedicure</h5>
+            <a href="#" class="btn btn-discover mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 02 -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="explore-card rounded-4 shadow-lg overflow-hidden position-relative">
+          <img src="https://images.pexels.com/photos/8129905/pexels-photo-8129905.jpeg" 
+               class="img-fluid w-100 service-img" alt="Haircut & Coloring">
+          <div class="explore-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+               style="background: rgba(255,255,255,0.15); backdrop-filter: blur(3px);">
+            <h5 class="text-white fw-bold">02. Haircut & Coloring</h5>
+            <a href="#" class="btn btn-discover mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 03 -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1400">
+        <div class="explore-card rounded-4 shadow-lg overflow-hidden position-relative">
+          <img src="https://images.pexels.com/photos/17056220/pexels-photo-17056220.jpeg" 
+               class="img-fluid w-100 service-img" alt="Professional Makeup">
+          <div class="explore-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+               style="background: rgba(255,255,255,0.15); backdrop-filter: blur(3px);">
+            <h5 class="text-white fw-bold">03. Professional Makeup</h5>
+            <a href="#" class="btn btn-discover mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 04 -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1600">
+        <div class="explore-card rounded-4 shadow-lg overflow-hidden position-relative">
+          <img src="https://images.pexels.com/photos/3762881/pexels-photo-3762881.jpeg" 
+               class="img-fluid w-100 service-img" alt="Body Spa">
+          <div class="explore-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+               style="background: rgba(255,255,255,0.15); backdrop-filter: blur(3px);">
+            <h5 class="text-white fw-bold">04. Body Spa</h5>
+            <a href="#" class="btn btn-discover mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- RESERVATION SECTION -->
+<section id="reservation" class="py-5" style="background-color: #fff;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- LEFT IMAGE SIDE -->
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+        <div class="position-relative rounded-4 overflow-hidden shadow-lg">
+          <img src="https://images.pexels.com/photos/2957497/pexels-photo-2957497.jpeg" 
+               alt="Reservation Image" class="img-fluid rounded-4 zoom-anim">
+          <div class="position-absolute top-0 start-0 w-100 h-100" 
+               style="background: rgba(255, 20, 147, 0.2); mix-blend-mode: multiply;"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM SIDE -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+        <h2 class="fw-bold mb-3" style="color:#ff1493;">Reservation</h2>
+        <h4 class="fw-semibold mb-3" style="color:#333;">Make an Appointment</h4>
+        <p class="text-muted mb-4">
+          Schedule your beauty session today and experience the luxury of personalized care.
+        </p>
+
+        <form class="appointment-form p-4 rounded-4 shadow-lg" style="background-color:#fffafc;">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="email" class="form-control form-anim" placeholder="Email" required>
+            </div>
+            <div class="col-md-6">
+              <select class="form-select form-anim" required>
+                <option selected disabled>Professional Makeup</option>
+                <option>Manicure & Pedicure</option>
+                <option>Hair Styling</option>
+                <option>Nails</option>
+                <option>Body Treatment</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="date" class="form-control form-anim" required>
+            </div>
+            <div class="col-md-6">
+              <input type="time" class="form-control form-anim" required>
+            </div>
+            <div class="col-12">
+              <input type="tel" class="form-control form-anim" placeholder="Phone" required>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-appointment mt-3">Make an Appointment</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GALLERY SECTION -->
+
+<!-- PRICING SECTION -->
+<section id="pricing" class="py-5" style="background-color:#fff;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-2" style="color:#ff1493;" data-aos="fade-down" data-aos-duration="1000">Pricing</h2>
+    <h4 class="fw-semibold mb-3" style="color:#333;" data-aos="fade-up" data-aos-duration="1000">Our Prices</h4>
+    <p class="text-muted mb-5" data-aos="fade-up" data-aos-duration="1200">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+    </p>
+
+    <div class="row g-4">
+      <!-- Hair Style -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="price-card rounded-4 shadow-lg p-4 position-relative overflow-hidden">
+          <div class="price-header mb-3">
+            <h5 class="fw-bold" style="color:#ff1493;">Hair Style</h5>
+            <h3 class="fw-bold" style="color:#333;">$50.00 <span class="fs-6 text-muted">/ session</span></h3>
+          </div>
+          <ul class="list-unstyled mb-4 text-muted">
+            <li>Hair Dryer</li>
+            <li>Hair Coloring</li>
+            <li>Hair Cut</li>
+            <li>Hair Dresser</li>
+            <li>Hair Spa</li>
+          </ul>
+          <button class="btn btn-offer">Get Offer</button>
+        </div>
+      </div>
+
+      <!-- Manicure Pedicure -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="price-card rounded-4 shadow-lg p-4 position-relative overflow-hidden">
+          <div class="price-header mb-3">
+            <h5 class="fw-bold" style="color:#ff1493;">Manicure Pedicure</h5>
+            <h3 class="fw-bold" style="color:#333;">$34.50 <span class="fs-6 text-muted">/ session</span></h3>
+          </div>
+          <ul class="list-unstyled mb-4 text-muted">
+            <li>Manicure</li>
+            <li>Pedicure</li>
+            <li>Coloring</li>
+            <li>Nails</li>
+            <li>Nail Cut</li>
+          </ul>
+          <button class="btn btn-offer">Get Offer</button>
+        </div>
+      </div>
+
+      <!-- Makeup -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1400">
+        <div class="price-card rounded-4 shadow-lg p-4 position-relative overflow-hidden">
+          <div class="price-header mb-3">
+            <h5 class="fw-bold" style="color:#ff1493;">Makeup</h5>
+            <h3 class="fw-bold" style="color:#333;">$54.50 <span class="fs-6 text-muted">/ session</span></h3>
+          </div>
+          <ul class="list-unstyled mb-4 text-muted">
+            <li>Makeup</li>
+            <li>Professional Makeup</li>
+            <li>Blush On</li>
+            <li>Facial Massage</li>
+            <li>Facial Spa</li>
+          </ul>
+          <button class="btn btn-offer">Get Offer</button>
+        </div>
+      </div>
+
+      <!-- Body Treatment -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="1600">
+        <div class="price-card rounded-4 shadow-lg p-4 position-relative overflow-hidden">
+          <div class="price-header mb-3">
+            <h5 class="fw-bold" style="color:#ff1493;">Body Treatment</h5>
+            <h3 class="fw-bold" style="color:#333;">$89.50 <span class="fs-6 text-muted">/ session</span></h3>
+          </div>
+          <ul class="list-unstyled mb-4 text-muted">
+            <li>Massage</li>
+            <li>Spa</li>
+            <li>Foot Spa</li>
+            <li>Body Spa</li>
+            <li>Relaxing</li>
+          </ul>
+          <button class="btn btn-offer">Get Offer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER SECTION -->
+<footer class="footer py-5" style="background-color: #fff0f6; color: #333;">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Camille Brand -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+        <h3 class="fw-bold mb-3" style="color:#ff1493;">Camille</h3>
+        <p class="text-muted">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="social-icons mt-4">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Information -->
+      <div class="col-md-2" data-aos="fade-up" data-aos-duration="1000">
+        <h5 class="fw-bold mb-3" style="color:#ff1493;">Information</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">FAQs</a></li>
+          <li><a href="#" class="footer-link">Privacy</a></li>
+          <li><a href="#" class="footer-link">Terms & Condition</a></li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-2" data-aos="fade-up" data-aos-duration="1200">
+        <h5 class="fw-bold mb-3" style="color:#ff1493;">Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">About</a></li>
+          <li><a href="#" class="footer-link">Services</a></li>
+          <li><a href="#" class="footer-link">Work</a></li>
+          <li><a href="#" class="footer-link">Blog</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
+        <h5 class="fw-bold mb-3" style="color:#ff1493;">Have a Questions?</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="fas fa-map-marker-alt me-2" style="color:#ff1493;"></i>203 Fake St. Mountain View, San Francisco, California, USA
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-phone me-2" style="color:#ff1493;"></i>+2 392 3929 210
+          </li>
+          <li>
+            <i class="fas fa-envelope me-2" style="color:#ff1493;"></i>info@yourdomain.com
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="my-4" style="border-color:#ffd3e3;">
+
+    <div class="text-center" data-aos="fade-up" data-aos-duration="1200">
+      <p class="mb-0 text-muted">
+        Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart heart-animate"></i> by <span style="color:#ff1493;">Colorlib</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>

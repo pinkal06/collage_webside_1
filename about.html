@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camille</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="about.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-gem"></i> Camille</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="fa fa-bars text-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="Camille.html"><i class="fa-solid fa-house icon"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa-solid fa-briefcase icon"></i> Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gallery.html"><i class="fa-solid fa-images icon"></i> Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-user icon"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Blog.html"><i class="fa-solid fa-blog icon"></i> Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contect.html"><i class="fa-solid fa-envelope icon"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="camilleCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/208052/pexels-photo-208052.jpeg');">
+        <div class="carousel-caption">
+          <h1>Welcome to Camille</h1>
+          <p>Where creativity meets modern elegance</p>
+          <a href="#" class="btn btn-discover mt-3">Discover Now</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/2721977/pexels-photo-2721977.jpeg');">
+        <div class="carousel-caption">
+          <h1>Stylish & Modern</h1>
+          <p>We create designs that inspire</p>
+          <a href="#" class="btn btn-discover mt-3">Discover Now</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/3373738/pexels-photo-3373738.jpeg');">
+        <div class="carousel-caption">
+          <h1>Your Brand, Our Passion</h1>
+          <p>Let’s build something beautiful together</p>
+          <a href="#" class="btn btn-discover mt-3">Discover Now</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#camilleCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#camilleCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Navbar Scroll Effect -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <!-- ABOUT SECTION -->
+
+<!-- ABOUT SECTION -->
+<section class="about-section py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- Left: Text -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <h5 class="text-uppercase fw-bold" style="color:#ff1493;">About</h5>
+        <h2 class="fw-bold mb-3" style="color:#222;">About Us</h2>
+        <h4 class="fw-semibold mb-4" style="color:#ff1493;">A World Class Beauty Salon Company</h4>
+        <p class="text-muted mb-4">
+          But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her,
+          made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+        </p>
+        <p class="text-muted">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+        <a href="#services" class="btn-discover mt-3">
+          Discover Now <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+      <!-- Right: Video -->
+      <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+        <div class="video-box position-relative">
+          <video autoplay muted loop playsinline class="about-video rounded-4 shadow-lg">
+            <source src="https://www.pexels.com/download/video/1776306/" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay"></div>
+          <div class="play-icon">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- STYLIST SECTION -->
+<section class="stylist-section py-5" id="stylist">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+      <h2 class="fw-bold" style="color:#ff1493;">Our Stylists</h2>
+      <p class="text-muted">Meet our talented and creative beauty experts 💅</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Stylist 1 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="team-card position-relative overflow-hidden rounded-4 shadow-lg">
+          <img src="https://images.pexels.com/photos/3993469/pexels-photo-3993469.jpeg" class="img-fluid team-img" alt="Stylist 1">
+          <div class="team-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="fw-bold text-white mb-1">Sophia Adams</h5>
+            <p class="text-white-50 mb-3">Artistic Director</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stylist 2 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1100">
+        <div class="team-card position-relative overflow-hidden rounded-4 shadow-lg">
+          <img src="https://images.pexels.com/photos/3993442/pexels-photo-3993442.jpeg" class="img-fluid team-img" alt="Stylist 2">
+          <div class="team-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="fw-bold text-white mb-1">Isabella Grace</h5>
+            <p class="text-white-50 mb-3">Makeup Artist</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stylist 3 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="team-card position-relative overflow-hidden rounded-4 shadow-lg">
+          <img src="https://images.pexels.com/photos/8468036/pexels-photo-8468036.jpeg" class="img-fluid team-img" alt="Stylist 3">
+          <div class="team-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="fw-bold text-white mb-1">Olivia Parker</h5>
+            <p class="text-white-50 mb-3">Hair Stylist</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER SECTION -->
+<footer class="footer py-5" style="background-color: #fff0f6; color: #333;">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Camille Brand -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+        <h3 class="fw-bold mb-3" style="color:#ff1493;">Camille</h3>
+        <p class="text-muted">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="social-icons mt-4">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Information -->
+      <div class="col-md-2" data-aos="fade-up" data-aos-duration="1000">
+        <h5 class="fw-bold mb-3" style="color:#ff1493;">Information</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">FAQs</a></li>
+          <li><a href="#" class="footer-link">Privacy</a></li>
+          <li><a href="#" class="footer-link">Terms & Condition</a></li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-2" data-aos="fade-up" data-aos-duration="1200">
+        <h5 class="fw-bold mb-3" style="color:#ff1493;">Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">About</a></li>
+          <li><a href="#" class="footer-link">Services</a></li>
+          <li><a href="#" class="footer-link">Work</a></li>
+          <li><a href="#" class="footer-link">Blog</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
+        <h5 class="fw-bold mb-3" style="color:#ff1493;">Have a Questions?</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="fas fa-map-marker-alt me-2" style="color:#ff1493;"></i>203 Fake St. Mountain View, San Francisco, California, USA
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-phone me-2" style="color:#ff1493;"></i>+2 392 3929 210
+          </li>
+          <li>
+            <i class="fas fa-envelope me-2" style="color:#ff1493;"></i>info@yourdomain.com
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="my-4" style="border-color:#ffd3e3;">
+
+    <div class="text-center" data-aos="fade-up" data-aos-duration="1200">
+      <p class="mb-0 text-muted">
+        Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart heart-animate"></i> by <span style="color:#ff1493;">Colorlib</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
